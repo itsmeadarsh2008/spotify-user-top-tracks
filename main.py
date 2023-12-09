@@ -33,4 +33,4 @@ def run():
     # Extract track URIs and add them to the existing playlist
     track_uris = [track['uri'] for track in top_tracks['items']]
     sp.playlist_add_items(playlist_id_, track_uris)
-    sp.playlist_change_details(playlist_id_,'Top Tracks Playlist 🎧',description=f'Updates frequently. Last updated: {datetime.now().strftime("%d/%m/%Y at %H:%M:%S")}\n Project Developed and Automated By: Adarsh Gourab Mahalik')
+    sp.playlist_change_details(playlist_id_,'Top Tracks Playlist',description=f'Updates frequently. Last updated: {datetime.now().strftime("%d/%m/%Y at %H:%M:%S")}')
