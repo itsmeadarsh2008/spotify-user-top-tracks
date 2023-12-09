@@ -23,7 +23,7 @@ def clear_playlist(playlist_id):
     track_uris = [track['track']['uri'] for track in current_tracks['items']]
     sp.playlist_remove_all_occurrences_of_items(playlist_id, track_uris)
 
-if __name__ == '__main__':
+def run():
     playlist_id_ = os.environ.get('PLAYLIST_ID')
     clear_playlist(playlist_id_)
     # Get the user's top tracks
