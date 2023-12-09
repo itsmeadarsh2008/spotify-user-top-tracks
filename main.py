@@ -27,7 +27,7 @@ if __name__ == '__main__':
     playlist_id_ = os.environ.get('PLAYLIST_ID')
     clear_playlist(playlist_id_)
     # Get the user's top tracks
-    top_tracks = sp.current_user_top_tracks(limit=35, time_range='short_term')
+    top_tracks = sp.current_user_top_tracks(limit=40, time_range='short_term')
 
     # Extract track URIs and add them to the existing playlist
     track_uris = [track['uri'] for track in top_tracks['items']]
