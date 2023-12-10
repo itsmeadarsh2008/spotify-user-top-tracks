@@ -1,8 +1,8 @@
-name: Daily Runner
+name: Automated Playlist Updater
 
 on:
   schedule:
-    - cron: '10 9 * * *'
+    - cron: '00 4 * * *'
   push:
     branches:
       - main
