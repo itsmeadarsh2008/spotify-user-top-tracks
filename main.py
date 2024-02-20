@@ -3,7 +3,7 @@ from spotipy.oauth2 import SpotifyOAuth
 import os
 from datetime import datetime
 
-# Credintals
+# credentials
 client_id = os.environ.get("SPOTIPY_CLIENT_ID")
 client_secret = os.environ.get("SPOTIPY_CLIENT_SECRET")
 redirect_uri = os.environ.get("SPOTIPY_REDIRECT_URI")
